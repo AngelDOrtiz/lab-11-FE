@@ -9,6 +9,8 @@ import {
   Redirect
 } from 'react-router-dom';
 import './App.css';
+import CatPage from '../cats/CatPage';
+import CatDetailPage from '../detail/CatDetailPage';
 
 class App extends Component {
 
@@ -26,15 +28,15 @@ class App extends Component {
                 )}
               />
 
-              <Route path="/resources" exact={true}
+              <Route path="/cats" exact={true}
                 render={routerProps => (
-                  <div>Implement a page of resources</div>
+                  <CatPage {...routerProps}/>
                 )}
               />
 
-              <Route path="/resources/:id"
+              <Route path="/cats/:id"
                 render={routerProps => (
-                  <div>Implement a page for id {routerProps.match.params.id}</div>
+                  <CatDetailPage {...routerProps}/>
                 )}
               />
 
