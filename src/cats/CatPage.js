@@ -18,10 +18,10 @@ export default class CatPage extends Component {
     }
 
     render() {
-        const { cats } = this.state;
+      const { cats } = this.state;
       return (
         <div className="CatPage">
-            <h2>Here are the cats you requested</h2>
+          <h2>Here are the cats you requested</h2>
             
                 
         </div>
