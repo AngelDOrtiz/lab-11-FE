@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { getCat } from '../utils/cats-api.js';
 
+
 export default class CatDetailPage extends Component {
 
     state = {
-      cat: null
+      cat: null,
+      
     }
     async componentDidMount() {
       const { match } = this.props;
@@ -22,8 +24,9 @@ export default class CatDetailPage extends Component {
       if (!cat) return null;
       return (
         <div className="CatDetail">
+          
           <h2>Cat Detail Page</h2>
-            
+          <img src={cat.url} alt={cat.name}/>
           <p>Cat name: {cat.name}</p>
           <p>Cat lives: {cat.lives}</p>
           <p>Cat year: {cat.year}</p>

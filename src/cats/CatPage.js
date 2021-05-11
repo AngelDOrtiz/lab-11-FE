@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import CatList from './CatList.js';
 import { getCats } from '../utils/cats-api.js';
 
 export default class CatPage extends Component {
@@ -22,7 +22,7 @@ export default class CatPage extends Component {
       return (
         <div className="CatPage">
           <h2>Here are the cats you requested</h2>
-            
+          <CatList cats={cats}/>
                 
         </div>
       );
