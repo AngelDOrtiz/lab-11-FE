@@ -46,7 +46,7 @@ export default class CatForm extends Component {
       handleChangeYear = ({ target }) => {
         this.setState({ year: target.value });
       }
-    
+    //this sets the state in a checkbox form
       handleChangeIsSidekick = ({ target }) => {
         this.setState({ isSidekick: target.checked });
       }
