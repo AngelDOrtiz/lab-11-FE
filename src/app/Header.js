@@ -13,6 +13,8 @@ class Header extends Component {
           <NavLink to="/" exact={true}>Go Back Home</NavLink>
           <br></br>
           <NavLink to="/cats" exact={true}>All Cats</NavLink>
+          <br></br>
+          <NavLink to='/cats/add' exact={true}>Add a Cat</NavLink>
         </nav>
       </header>
     );
